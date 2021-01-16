@@ -1,0 +1,310 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    min-width: 745px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+#search_term {
+    font-size: 22px;
+}
+
+#sort {
+    background-color: #fff;
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-flex-container {
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-item-block {
+    background-color: #f1f1f1;
+    width: 400px;
+    max-height: 500px;
+    margin: 10px;
+    overflow: hidden;
+    transition: all .2s ease-in;
+}
+
+.main-item-block p {
+    margin: 10px;
+}
+
+.main-item-block:hover {
+    transform: scale(1.05);
+}
+
+.main-img-block {
+    width: 100%;
+    height: 250px;
+}
+
+.main-item-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.main-item-img:hover {
+    opacity: 75%;
+}
+
+.main-item-title {
+    position: relative;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.main-item-quantity {
+    text-align: center;
+    font-size: 20px;
+}
+
+#search-form {
+    margin: 10px;
+}
+
+#category {
+    background-color: #fff;
+}
+
+.sell-page {
+    margin: 20px;
+}
+
+#description {
+    height: 200px;
+    width: 500px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.profile-info-block {
+    display: grid;
+    grid-template-columns: auto 96px;
+}
+
+.profile-item-text p {
+    margin: 15px;
+}
+
+.profile-item-title {
+    display: inline-block;
+    font-size: 30px;
+}
+
+.profile-item-price {
+    display: inline-block;
+    font-size: 30px;
+    color: red;
+}
+
+.profile-item-quanity {
+    display: inline-block;
+    float: right;
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+.profile-item-seller {
+    display: inline-block;
+}
+
+.profile-img {
+
+}
+
+.profile-flex-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.profile-item-block {
+    background-color: #f1f1f1;
+    margin: 10px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 60% 40%;
+    min-height: 250px;
+    max-height: 600px;
+    min-width: 710px;
+    overflow: hidden;
+}
+
+.profile-item-text {
+    grid-column: 1/2;
+    height: inherit;
+    width: inherit;
+}
+
+.profile-img-block {
+    grid-column: 2/3;
+    height: inherit;
+    width: inherit;
+}
+
+.profile-item-img {
+    min-height: 100px;
+    max-height: 300px;
+    width: inherit;
+    object-fit: cover;
+}
+
+.item-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 70vh 20vh;
+
+    min-height: 200px;
+    min-width: 200px;
+}
+
+.item-text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: aqua;
+
+    overflow: scroll;
+}
+
+.item-img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: lightcoral;
+}
+
+.item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-buttons {
+    position: relative;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-color: lightgreen;
+    min-height: 100px;
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 10vh;
+    background-color: orange;
+    transform: translateY(-50%);
+}
+
+.button-container button {
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 30px;
+}
+
+
+#purchase-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#purchase-box {
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#purchase-box * {
+    line-height: 25px;
+}
+
+#purchase-form {
+    height: 75%;
+}
+
+#quantity-selection {
+    font-size: 25px;
+}
+
+#dynamic_quantity {
+    font-size: 17px;
+}
+
+#purchase-total-price {
+    font-size: 25px;
+}
+
+.purchase-buttons {
+    text-align: center;
+    bottom: 10px;
+
+}
+
+.purchase-buttons * {
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#purchase-btn {
+    background-color: lightgreen;
+}
